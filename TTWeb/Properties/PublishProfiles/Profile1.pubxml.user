@@ -1,0 +1,391 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile>2015-04-21T17:14:37.0000000+03:00</TimeStampOfAssociatedLegacyPublishXmlFile>
+    <_PublishTargetUrl>C:\TBSP\publish</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/Microsoft.Windows.Design.Extensibility.dll">
+      <publishTime>02/21/2011 16:04:48</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Windows.Design.Interaction.dll">
+      <publishTime>02/21/2011 16:04:48</publishTime>
+    </File>
+    <File Include="bin/TTWeb.dll">
+      <publishTime>11/01/2019 18:26:49</publishTime>
+    </File>
+    <File Include="bin/TTWeb.pdb">
+      <publishTime>05/21/2015 12:33:25</publishTime>
+    </File>
+    <File Include="DeadSession.aspx">
+      <publishTime>12/12/2013 15:35:52</publishTime>
+    </File>
+    <File Include="Default.aspx">
+      <publishTime>07/01/2015 16:46:21</publishTime>
+    </File>
+    <File Include="DocumentDisplay.aspx">
+      <publishTime>05/11/2011 21:19:00</publishTime>
+    </File>
+    <File Include="Fixed/ActiveFixedTickets.aspx">
+      <publishTime>07/16/2015 17:01:58</publishTime>
+    </File>
+    <File Include="Fixed/AppointmentScheduler.aspx">
+      <publishTime>08/13/2015 17:04:19</publishTime>
+    </File>
+    <File Include="Fixed/FixedProfiles.aspx">
+      <publishTime>07/14/2015 13:19:45</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>05/30/2010 21:27:00</publishTime>
+    </File>
+    <File Include="InitiateSchedule.aspx">
+      <publishTime>11/01/2019 17:28:59</publishTime>
+    </File>
+    <File Include="logout.aspx">
+      <publishTime>07/13/2013 14:47:31</publishTime>
+    </File>
+    <File Include="MainPage.aspx">
+      <publishTime>07/03/2015 16:13:25</publishTime>
+    </File>
+    <File Include="PasswordExpiration.aspx">
+      <publishTime>07/01/2015 16:46:21</publishTime>
+    </File>
+    <File Include="Reporting/DailyProgram.aspx">
+      <publishTime>07/03/2015 16:13:46</publishTime>
+    </File>
+    <File Include="Reporting/DailyVisits.aspx">
+      <publishTime>07/02/2015 17:42:05</publishTime>
+    </File>
+    <File Include="Reporting/Expenses.aspx">
+      <publishTime>10/09/2015 13:42:14</publishTime>
+    </File>
+    <File Include="Reporting/Expenses_Dat.xsc">
+      <publishTime>11/16/2015 18:05:44</publishTime>
+    </File>
+    <File Include="Reporting/Expenses_Dat.xss">
+      <publishTime>11/16/2015 18:05:44</publishTime>
+    </File>
+    <File Include="Reporting/ManagementReportSummary.aspx">
+      <publishTime>07/02/2015 17:53:54</publishTime>
+    </File>
+    <File Include="Reporting/Overtimes.aspx">
+      <publishTime>10/07/2015 17:03:20</publishTime>
+    </File>
+    <File Include="Reporting/Schedules.aspx">
+      <publishTime>07/02/2015 17:44:01</publishTime>
+    </File>
+    <File Include="Reporting/SchedulesKPIs.aspx">
+      <publishTime>07/02/2015 17:48:53</publishTime>
+    </File>
+    <File Include="Reporting/VFTroubleTickets.aspx">
+      <publishTime>07/02/2015 17:40:32</publishTime>
+    </File>
+    <File Include="SchEdit_Report.aspx">
+      <publishTime>07/02/2015 17:43:44</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.4.1-vsdoc.js">
+      <publishTime>11/03/2010 18:50:00</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.4.1.js">
+      <publishTime>11/03/2010 18:50:00</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.4.1.min.js">
+      <publishTime>11/03/2010 18:50:00</publishTime>
+    </File>
+    <File Include="Scripts/JScriptFunctions.js">
+      <publishTime>11/16/2015 17:18:19</publishTime>
+    </File>
+    <File Include="System_Configuration/ConfigurationList.aspx">
+      <publishTime>07/03/2015 16:08:35</publishTime>
+    </File>
+    <File Include="System_Configuration/NWHConfig.aspx">
+      <publishTime>07/01/2015 16:46:26</publishTime>
+    </File>
+    <File Include="System_Configuration/Processes.aspx">
+      <publishTime>07/03/2015 16:08:52</publishTime>
+    </File>
+    <File Include="System_Configuration/Relations.aspx">
+      <publishTime>07/01/2015 16:55:19</publishTime>
+    </File>
+    <File Include="System_Configuration/RelationTypes.aspx">
+      <publishTime>07/03/2015 16:09:21</publishTime>
+    </File>
+    <File Include="System_Configuration/RoleActions.aspx">
+      <publishTime>07/03/2015 16:09:31</publishTime>
+    </File>
+    <File Include="System_Configuration/RoutingPath.aspx">
+      <publishTime>07/03/2015 16:09:43</publishTime>
+    </File>
+    <File Include="System_Configuration/SRICategory.aspx">
+      <publishTime>07/06/2015 12:59:21</publishTime>
+    </File>
+    <File Include="System_Configuration/SystemGroups.aspx">
+      <publishTime>07/03/2015 16:10:47</publishTime>
+    </File>
+    <File Include="System_Configuration/Systems.aspx">
+      <publishTime>07/03/2015 16:10:58</publishTime>
+    </File>
+    <File Include="System_Configuration/Vehicle.aspx">
+      <publishTime>07/06/2015 12:58:45</publishTime>
+    </File>
+    <File Include="System_Configuration/ViewLog.aspx">
+      <publishTime>07/03/2015 16:16:49</publishTime>
+    </File>
+    <File Include="System_Configuration/WorkflowInfo.aspx">
+      <publishTime>07/01/2015 16:46:27</publishTime>
+    </File>
+    <File Include="System_Views/ActiveBuildCMs.aspx">
+      <publishTime>07/03/2015 16:11:52</publishTime>
+    </File>
+    <File Include="System_Views/ActiveBuildings.aspx">
+      <publishTime>07/03/2015 16:17:20</publishTime>
+    </File>
+    <File Include="System_Views/ActiveChargeable.aspx">
+      <publishTime>07/03/2015 16:17:30</publishTime>
+    </File>
+    <File Include="System_Views/ActiveCombinedMap.aspx">
+      <publishTime>07/01/2015 16:46:29</publishTime>
+    </File>
+    <File Include="System_Views/ActiveCosAccess.aspx">
+      <publishTime>07/03/2015 16:17:48</publishTime>
+    </File>
+    <File Include="System_Views/ActiveCosTelemg.aspx">
+      <publishTime>07/03/2015 16:17:56</publishTime>
+    </File>
+    <File Include="System_Views/ActiveCosTickets.aspx">
+      <publishTime>07/03/2015 16:18:05</publishTime>
+    </File>
+    <File Include="System_Views/ActiveMoreTickets.aspx">
+      <publishTime>07/03/2015 16:18:14</publishTime>
+    </File>
+    <File Include="System_Views/ActiveMoreTicketsMap.aspx">
+      <publishTime>07/01/2015 16:46:30</publishTime>
+    </File>
+    <File Include="System_Views/ActivePMs.aspx">
+      <publishTime>11/01/2019 16:50:45</publishTime>
+    </File>
+    <File Include="System_Views/ActivePMsMap.aspx">
+      <publishTime>07/01/2015 16:46:30</publishTime>
+    </File>
+    <File Include="System_Views/ActiveSchedules.aspx">
+      <publishTime>07/03/2015 16:18:31</publishTime>
+    </File>
+    <File Include="System_Views/ActiveSuppls.aspx">
+      <publishTime>07/03/2015 16:18:43</publishTime>
+    </File>
+    <File Include="System_Views/ActiveTickets.aspx">
+      <publishTime>07/03/2015 16:18:52</publishTime>
+    </File>
+    <File Include="System_Views/ActiveTicketsMap.aspx">
+      <publishTime>02/03/2016 13:50:06</publishTime>
+    </File>
+    <File Include="System_Views/ActiveVictusTickets.aspx">
+      <publishTime>07/01/2019 12:44:05</publishTime>
+    </File>
+    <File Include="System_Views/ActiveVictusTicketsMap.aspx">
+      <publishTime>02/03/2016 13:49:10</publishTime>
+    </File>
+    <File Include="System_Views/ActiveWindPMs.aspx">
+      <publishTime>11/01/2019 16:32:36</publishTime>
+    </File>
+    <File Include="System_Views/ActiveWindPMsMap.aspx">
+      <publishTime>07/01/2015 16:46:31</publishTime>
+    </File>
+    <File Include="System_Views/ActiveWindTickets.aspx">
+      <publishTime>07/03/2015 16:19:08</publishTime>
+    </File>
+    <File Include="System_Views/ActiveWindTicketsMap.aspx">
+      <publishTime>07/01/2015 16:46:31</publishTime>
+    </File>
+    <File Include="System_Views/AddedTickets.aspx">
+      <publishTime>07/03/2015 16:19:16</publishTime>
+    </File>
+    <File Include="System_Views/AddedVictusTickets.aspx">
+      <publishTime>07/09/2019 17:00:32</publishTime>
+    </File>
+    <File Include="System_Views/AddedWindTickets.aspx">
+      <publishTime>07/03/2015 16:19:24</publishTime>
+    </File>
+    <File Include="System_Views/CancelledSchedules.aspx">
+      <publishTime>07/03/2015 16:19:35</publishTime>
+    </File>
+    <File Include="System_Views/CheckNodeNames.aspx">
+      <publishTime>07/03/2015 16:19:44</publishTime>
+    </File>
+    <File Include="System_Views/CombinedPMs.aspx">
+      <publishTime>07/03/2015 16:19:56</publishTime>
+    </File>
+    <File Include="System_Views/CompletedBuildCMs.aspx">
+      <publishTime>07/03/2015 16:20:04</publishTime>
+    </File>
+    <File Include="System_Views/CompletedBuildings.aspx">
+      <publishTime>07/03/2015 16:20:15</publishTime>
+    </File>
+    <File Include="System_Views/CompletedChargeable.aspx">
+      <publishTime>07/03/2015 16:20:25</publishTime>
+    </File>
+    <File Include="System_Views/CompletedCosAccess.aspx">
+      <publishTime>07/03/2015 16:21:06</publishTime>
+    </File>
+    <File Include="System_Views/CompletedCosTelemg.aspx">
+      <publishTime>07/03/2015 16:21:27</publishTime>
+    </File>
+    <File Include="System_Views/CompletedPMs.aspx">
+      <publishTime>11/01/2019 16:24:10</publishTime>
+    </File>
+    <File Include="System_Views/CompletedSchedules.aspx">
+      <publishTime>07/03/2015 16:21:43</publishTime>
+    </File>
+    <File Include="System_Views/CompletedSuppls.aspx">
+      <publishTime>07/03/2015 16:21:52</publishTime>
+    </File>
+    <File Include="System_Views/CompletedWindPMs.aspx">
+      <publishTime>07/01/2019 12:47:01</publishTime>
+    </File>
+    <File Include="System_Views/CosAccessMap.aspx">
+      <publishTime>07/01/2015 16:46:32</publishTime>
+    </File>
+    <File Include="System_Views/CosSites.aspx">
+      <publishTime>07/03/2015 16:22:09</publishTime>
+    </File>
+    <File Include="System_Views/CosSitesMap.aspx">
+      <publishTime>07/01/2015 16:46:32</publishTime>
+    </File>
+    <File Include="System_Views/CosTelemgMap.aspx">
+      <publishTime>07/01/2015 16:46:32</publishTime>
+    </File>
+    <File Include="System_Views/CosTicketsMap.aspx">
+      <publishTime>07/01/2015 16:46:33</publishTime>
+    </File>
+    <File Include="System_Views/DispatcherSchedules.aspx">
+      <publishTime>07/03/2015 16:22:17</publishTime>
+    </File>
+    <File Include="System_Views/ExpertTickets.aspx">
+      <publishTime>07/06/2015 12:49:27</publishTime>
+    </File>
+    <File Include="System_Views/ExpertTicketsLog.aspx">
+      <publishTime>07/06/2015 12:50:13</publishTime>
+    </File>
+    <File Include="System_Views/Fleet_Report.aspx">
+      <publishTime>07/02/2015 17:43:14</publishTime>
+    </File>
+    <File Include="System_Views/ManagementTicketsReport.aspx">
+      <publishTime>07/03/2015 16:22:35</publishTime>
+    </File>
+    <File Include="System_Views/MyActiveSchedules.aspx">
+      <publishTime>07/03/2015 16:22:44</publishTime>
+    </File>
+    <File Include="System_Views/MyMessages.aspx">
+      <publishTime>07/03/2015 16:22:58</publishTime>
+    </File>
+    <File Include="System_Views/Nodes.aspx">
+      <publishTime>07/03/2015 16:23:28</publishTime>
+    </File>
+    <File Include="System_Views/NodesMap.aspx">
+      <publishTime>07/01/2015 16:46:33</publishTime>
+    </File>
+    <File Include="System_Views/ProcessedTroubleTickets.aspx">
+      <publishTime>07/03/2015 16:23:23</publishTime>
+    </File>
+    <File Include="System_Views/ReInitiateSchedule.aspx">
+      <publishTime>07/03/2015 16:23:38</publishTime>
+    </File>
+    <File Include="System_Views/RouterSchedules.aspx">
+      <publishTime>07/03/2015 16:23:46</publishTime>
+    </File>
+    <File Include="System_Views/SchEditControl.ascx">
+      <publishTime>09/24/2019 12:04:00</publishTime>
+    </File>
+    <File Include="System_Views/SchedulesMap.aspx">
+      <publishTime>07/01/2015 16:46:34</publishTime>
+    </File>
+    <File Include="System_Views/SchTicketInfoControl.ascx">
+      <publishTime>07/01/2015 16:46:36</publishTime>
+    </File>
+    <File Include="System_Views/SchTicketInfo_Report.aspx">
+      <publishTime>07/02/2015 17:43:29</publishTime>
+    </File>
+    <File Include="System_Views/SchVictusTicketInfoControl.ascx">
+      <publishTime>02/04/2016 10:45:13</publishTime>
+    </File>
+    <File Include="System_Views/SignOffSchedules.aspx">
+      <publishTime>11/01/2019 17:46:18</publishTime>
+    </File>
+    <File Include="System_Views/SolvedCosTickets.aspx">
+      <publishTime>07/03/2015 16:24:31</publishTime>
+    </File>
+    <File Include="System_Views/SolvedMoreTickets.aspx">
+      <publishTime>07/03/2015 16:24:43</publishTime>
+    </File>
+    <File Include="System_Views/SolvedTickets.aspx">
+      <publishTime>07/03/2015 16:24:50</publishTime>
+    </File>
+    <File Include="System_Views/SolvedVictusTickets.aspx">
+      <publishTime>02/03/2016 14:41:27</publishTime>
+    </File>
+    <File Include="System_Views/SolvedWindTickets.aspx">
+      <publishTime>07/03/2015 16:24:59</publishTime>
+    </File>
+    <File Include="System_Views/TicketsToBeScheduled.aspx">
+      <publishTime>07/03/2015 16:25:07</publishTime>
+    </File>
+    <File Include="System_Views/UploadTickets.aspx">
+      <publishTime>07/03/2015 16:25:15</publishTime>
+    </File>
+    <File Include="System_Views/UploadVictusTickets.aspx">
+      <publishTime>02/03/2016 17:48:04</publishTime>
+    </File>
+    <File Include="System_Views/UploadWindTickets.aspx">
+      <publishTime>07/03/2015 16:25:23</publishTime>
+    </File>
+    <File Include="System_Views/VictusSites.aspx">
+      <publishTime>08/04/2017 14:08:03</publishTime>
+    </File>
+    <File Include="System_Views/VictusSitesMap.aspx">
+      <publishTime>07/31/2017 16:05:53</publishTime>
+    </File>
+    <File Include="System_Views/VisitsLastMonth.aspx">
+      <publishTime>07/03/2015 16:25:31</publishTime>
+    </File>
+    <File Include="System_Views/VisitsNotPerformedLastMonth.aspx">
+      <publishTime>07/03/2015 16:25:40</publishTime>
+    </File>
+    <File Include="System_Views/VisitsPendingLastMonth.aspx">
+      <publishTime>07/03/2015 16:25:48</publishTime>
+    </File>
+    <File Include="System_Views/VisitsPerMonth.aspx">
+      <publishTime>07/03/2015 16:25:55</publishTime>
+    </File>
+    <File Include="System_Views/VisitsPerSite.aspx">
+      <publishTime>07/03/2015 16:26:03</publishTime>
+    </File>
+    <File Include="System_Views/WindSites.aspx">
+      <publishTime>07/03/2015 16:26:11</publishTime>
+    </File>
+    <File Include="System_Views/WindSitesMap.aspx">
+      <publishTime>07/01/2015 16:46:35</publishTime>
+    </File>
+    <File Include="User_Management/LoggedUsers.aspx">
+      <publishTime>07/03/2015 16:26:20</publishTime>
+    </File>
+    <File Include="User_Management/Roles.aspx">
+      <publishTime>07/03/2015 16:26:52</publishTime>
+    </File>
+    <File Include="User_Management/StandByList.aspx">
+      <publishTime>07/03/2015 16:26:59</publishTime>
+    </File>
+    <File Include="User_Management/Teams.aspx">
+      <publishTime>07/03/2015 16:27:23</publishTime>
+    </File>
+    <File Include="User_Management/Users.aspx">
+      <publishTime>07/03/2015 16:28:02</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>09/24/2019 12:07:38</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

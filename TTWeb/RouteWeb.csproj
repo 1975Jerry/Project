@@ -1,0 +1,1373 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A803FD42-43E9-4E01-A0E7-7A7E74403280}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TTWeb</RootNamespace>
+    <AssemblyName>TTWeb</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <UseIISExpress>true</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\TTWeb.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;c:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;c:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v17.1.Core, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataAccess.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v17.1.Core, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v17.1.Core, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v17.1.Export, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v17.1.Core, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v17.1.Core, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.ASPxGauges.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxScheduler.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.ASPxThemes.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.ASPxTreeList.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Web.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Xpo.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v17.1.Core, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGauges.v17.1.Core, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v17.1.Presets, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v17.1.Win, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPivotGrid.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v17.1.Core, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.CodeParser.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v17.1.Design, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v17.1.Extensions, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.Resources.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v17.1.Web, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v17.1.Core, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="PasswordExpiration.aspx" />
+    <Content Include="logout.aspx" />
+    <Content Include="Reporting\DailyProgram.aspx" />
+    <Content Include="Reporting\Expenses.aspx" />
+    <Content Include="Reporting\Overtimes.aspx" />
+    <Content Include="Reporting\ManagementReportSummary.aspx" />
+    <Content Include="Reporting\SchedulesKPIs.aspx" />
+    <Content Include="Reporting\DailyVisits.aspx" />
+    <Content Include="Reporting\Schedules.aspx" />
+    <Content Include="Reporting\VFTroubleTickets.aspx" />
+    <Content Include="System_Configuration\WorkflowInfo.aspx" />
+    <Content Include="System_Configuration\NWHConfig.aspx" />
+    <Content Include="System_Configuration\ViewLog.aspx" />
+    <Content Include="System_Configuration\Relations.aspx" />
+    <Content Include="System_Configuration\RelationTypes.aspx" />
+    <Content Include="System_Configuration\SystemGroups.aspx" />
+    <Content Include="System_Configuration\Systems.aspx" />
+    <Content Include="System_Views\ActivePMs.aspx" />
+    <Content Include="System_Views\SignOffSchedules.aspx" />
+    <Content Include="System_Views\ActiveVictusTicketsMap.aspx" />
+    <Content Include="System_Views\ActiveVictusTickets.aspx" />
+    <Content Include="System_Views\ActiveTicketsMap.aspx" />
+    <Content Include="System_Views\AddedVictusTickets.aspx" />
+    <Content Include="System_Views\AddedTickets.aspx" />
+    <Content Include="System_Views\CompletedPMs.aspx" />
+    <Content Include="System_Views\CheckNodeNames.aspx" />
+    <Content Include="System_Views\ActiveSuppls.aspx" />
+    <Content Include="System_Views\CompletedSuppls.aspx" />
+    <Content Include="System_Views\ActiveBuildings.aspx" />
+    <Content Include="System_Views\CompletedBuildings.aspx" />
+    <Content Include="System_Views\ActiveBuildCMs.aspx" />
+    <Content Include="System_Views\CompletedBuildCMs.aspx" />
+    <Content Include="System_Views\ActivePMsMap.aspx" />
+    <Content Include="System_Views\ActiveCosAccess.aspx" />
+    <Content Include="System_Views\CompletedCosAccess.aspx" />
+    <Content Include="System_Views\ActiveCosTelemg.aspx" />
+    <Content Include="System_Views\CompletedCosTelemg.aspx" />
+    <Content Include="System_Views\CancelledSchedules.aspx" />
+    <Content Include="System_Views\ActiveChargeable.aspx" />
+    <Content Include="System_Views\CompletedChargeable.aspx" />
+    <Content Include="System_Views\ActiveWindTickets.aspx" />
+    <Content Include="System_Views\AddedWindTickets.aspx" />
+    <Content Include="System_Views\ActiveWindTicketsMap.aspx" />
+    <Content Include="System_Views\ActiveWindPMs.aspx" />
+    <Content Include="System_Views\CompletedWindPMs.aspx" />
+    <Content Include="System_Views\ActiveWindPMsMap.aspx" />
+    <Content Include="System_Views\ActiveCosTickets.aspx" />
+    <Content Include="System_Views\ActiveMoreTickets.aspx" />
+    <Content Include="System_Views\ActiveMoreTicketsMap.aspx" />
+    <Content Include="System_Views\CombinedPMs.aspx" />
+    <Content Include="System_Views\ActiveCombinedMap.aspx" />
+    <Content Include="System_Views\ExpertTicketsLog.aspx" />
+    <Content Include="System_Views\ManagementTicketsReport.aspx" />
+    <Content Include="System_Views\VictusSitesMap.aspx" />
+    <Content Include="System_Views\ProcessedTroubleTickets.aspx" />
+    <Content Include="System_Views\SchVictusTicketInfoControl.ascx" />
+    <Content Include="System_Views\SolvedMoreTickets.aspx" />
+    <Content Include="System_Views\ExpertTickets.aspx" />
+    <Content Include="System_Views\CosTicketsMap.aspx" />
+    <Content Include="System_Views\SolvedCosTickets.aspx" />
+    <Content Include="System_Views\Fleet_Report.aspx" />
+    <Content Include="System_Views\SolvedVictusTickets.aspx" />
+    <Content Include="System_Views\UploadVictusTickets.aspx" />
+    <Content Include="System_Views\VictusSites.aspx" />
+    <Content Include="System_Views\WindSites.aspx" />
+    <Content Include="System_Views\WindSitesMap.aspx" />
+    <Content Include="System_Views\UploadWindTickets.aspx" />
+    <Content Include="System_Views\SolvedWindTickets.aspx" />
+    <Content Include="System_Views\RouterSchedules.aspx" />
+    <Content Include="System_Views\DispatcherSchedules.aspx" />
+    <Content Include="System_Views\ReInitiateSchedule.aspx" />
+    <Content Include="System_Views\SchedulesMap.aspx" />
+    <Content Include="System_Views\CosTelemgMap.aspx" />
+    <Content Include="System_Views\CosAccessMap.aspx" />
+    <Content Include="System_Views\CosSitesMap.aspx" />
+    <Content Include="System_Views\CosSites.aspx" />
+    <Content Include="System_Views\NodesMap.aspx" />
+    <Content Include="System_Views\TicketsToBeScheduled.aspx" />
+    <Content Include="System_Views\Nodes.aspx" />
+    <Content Include="System_Views\VisitsPendingLastMonth.aspx" />
+    <Content Include="System_Views\VisitsNotPerformedLastMonth.aspx" />
+    <Content Include="System_Views\VisitsLastMonth.aspx" />
+    <Content Include="System_Views\SchTicketInfo_Report.aspx" />
+    <Content Include="InitiateSchedule.aspx" />
+    <Content Include="System_Configuration\ConfigurationList.aspx" />
+    <Content Include="System_Configuration\SRICategory.aspx" />
+    <Content Include="System_Configuration\Processes.aspx" />
+    <Content Include="System_Configuration\Vehicle.aspx" />
+    <Content Include="System_Views\ActiveTickets.aspx" />
+    <Content Include="DeadSession.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="DocumentDisplay.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\JScriptFunctions.js" />
+    <Content Include="System_Views\ActiveSchedules.aspx" />
+    <Content Include="System_Views\CompletedSchedules.aspx" />
+    <Content Include="SchEdit_Report.aspx" />
+    <Content Include="System_Views\MyActiveSchedules.aspx" />
+    <Content Include="System_Views\SchTicketInfoControl.ascx" />
+    <Content Include="System_Views\SchEditControl.ascx" />
+    <Content Include="System_Views\SolvedTickets.aspx" />
+    <Content Include="System_Views\UploadTickets.aspx" />
+    <Content Include="System_Views\VisitsPerMonth.aspx" />
+    <Content Include="System_Views\VisitsPerSite.aspx" />
+    <Content Include="User_Management\LoggedUsers.aspx" />
+    <Content Include="MainPage.aspx" />
+    <Content Include="System_Views\MyMessages.aspx" />
+    <Content Include="System_Configuration\RoleActions.aspx" />
+    <Content Include="User_Management\Roles.aspx" />
+    <Content Include="System_Configuration\RoutingPath.aspx" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="User_Management\StandByList.aspx" />
+    <Content Include="User_Management\Teams.aspx" />
+    <Content Include="User_Management\Users.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="PasswordExpiration.aspx.cs">
+      <DependentUpon>PasswordExpiration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PasswordExpiration.aspx.designer.cs">
+      <DependentUpon>PasswordExpiration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="logout.aspx.cs">
+      <DependentUpon>logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="logout.aspx.designer.cs">
+      <DependentUpon>logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\DailyProgram.aspx.cs">
+      <DependentUpon>DailyProgram.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reporting\DailyProgram.aspx.designer.cs">
+      <DependentUpon>DailyProgram.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\DailyProgram_Dat.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DailyProgram_Dat.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\DailyProgram_XRep.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reporting\DailyProgram_XRep.Designer.cs">
+      <DependentUpon>DailyProgram_XRep.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\Expenses.aspx.cs">
+      <DependentUpon>Expenses.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reporting\Expenses.aspx.designer.cs">
+      <DependentUpon>Expenses.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\Expenses_Dat.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Expenses_Dat.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\Expenses_Xrep.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reporting\Expenses_Xrep.Designer.cs">
+      <DependentUpon>Expenses_Xrep.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\Overtimes.aspx.cs">
+      <DependentUpon>Overtimes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reporting\Overtimes.aspx.designer.cs">
+      <DependentUpon>Overtimes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\ManagementReportSummary.aspx.cs">
+      <DependentUpon>ManagementReportSummary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reporting\ManagementReportSummary.aspx.designer.cs">
+      <DependentUpon>ManagementReportSummary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\ManagementReportSummary_Dat.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ManagementReportSummary_Dat.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\ManagementReportSummary_Xrep.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reporting\ManagementReportSummary_Xrep.Designer.cs">
+      <DependentUpon>ManagementReportSummary_Xrep.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\Overtimes_Dat.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Overtimes_Dat.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\Overtimes_Xrep.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reporting\Overtimes_Xrep.Designer.cs">
+      <DependentUpon>Overtimes_Xrep.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\SchedulesKPIs.aspx.cs">
+      <DependentUpon>SchedulesKPIs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reporting\SchedulesKPIs.aspx.designer.cs">
+      <DependentUpon>SchedulesKPIs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\DailyVisits.aspx.cs">
+      <DependentUpon>DailyVisits.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reporting\DailyVisits.aspx.designer.cs">
+      <DependentUpon>DailyVisits.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\DailyVisits_Dat.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DailyVisits_Dat.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\DailyVisits_XRep.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reporting\DailyVisits_XRep.Designer.cs">
+      <DependentUpon>DailyVisits_XRep.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\Schedules.aspx.cs">
+      <DependentUpon>Schedules.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reporting\Schedules.aspx.designer.cs">
+      <DependentUpon>Schedules.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\SchedulesKPIs_Dat.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SchedulesKPIs_Dat.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\SchedulesKPIs_XRep.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reporting\SchedulesKPIs_XRep.Designer.cs">
+      <DependentUpon>SchedulesKPIs_XRep.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\Schedules_Dat.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Schedules_Dat.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\Schedules_XRep.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reporting\Schedules_XRep.Designer.cs">
+      <DependentUpon>Schedules_XRep.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\VFTroubleTickets.aspx.cs">
+      <DependentUpon>VFTroubleTickets.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reporting\VFTroubleTickets.aspx.designer.cs">
+      <DependentUpon>VFTroubleTickets.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\VFTroubleTickets_Dat.cs">
+      <DependentUpon>VFTroubleTickets_Dat.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\VFTroubleTickets_Dat.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VFTroubleTickets_Dat.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\VFTroubleTickets_XRep.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reporting\VFTroubleTickets_XRep.Designer.cs">
+      <DependentUpon>VFTroubleTickets_XRep.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SchEdit_DataSet.cs">
+      <DependentUpon>SchEdit_DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="System_Configuration\WorkflowInfo.aspx.cs">
+      <DependentUpon>WorkflowInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System_Configuration\WorkflowInfo.aspx.designer.cs">
+      <DependentUpon>WorkflowInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="System_Configuration\NWHConfig.aspx.cs">
+      <DependentUpon>NWHConfig.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System_Configuration\NWHConfig.aspx.designer.cs">
+      <DependentUpon>NWHConfig.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="System_Configuration\ViewLog.aspx.cs">
+      <DependentUpon>ViewLog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System_Configuration\ViewLog.aspx.designer.cs">
+      <DependentUpon>ViewLog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="System_Configuration\Relations.aspx.cs">
+      <DependentUpon>Relations.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System_Configuration\Relations.aspx.designer.cs">
+      <DependentUpon>Relations.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="System_Configuration\RelationTypes.aspx.cs">
+      <DependentUpon>RelationTypes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System_Configuration\RelationTypes.aspx.designer.cs">
+      <DependentUpon>RelationTypes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="System_Configuration\SystemGroups.aspx.cs">
+      <DependentUpon>SystemGroups.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System_Configuration\SystemGroups.aspx.designer.cs">
+      <DependentUpon>SystemGroups.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="System_Configuration\Systems.aspx.cs">
+      <DependentUpon>Systems.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System_Configuration\Systems.aspx.designer.cs">
+      <DependentUpon>Systems.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="System_Views\ActivePMs.aspx.cs">
+      <DependentUpon>ActivePMs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System_Views\ActivePMs.aspx.designer.cs">
+      <DependentUpon>ActivePMs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="System_Views\SignOffSchedules.aspx.cs">
+      <DependentUpon>SignOffSchedules.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System_Views\SignOffSchedules.aspx.designer.cs">
+      <DependentUpon>SignOffSchedules.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="System_Views\ActiveVictusTicketsMap.aspx.cs">
+      <DependentUpon>ActiveVictusTicketsMap.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System_Views\ActiveVictusTicketsMap.aspx.designer.cs">
+      <DependentUpon>ActiveVictusTicketsMap.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="System_Views\ActiveVictusTickets.aspx.cs">
+      <DependentUpon>ActiveVictusTickets.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System_Views\ActiveVictusTickets.aspx.designer.cs">
+      <DependentUpon>ActiveVictusTickets.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="System_Views\ActiveTicketsMap.aspx.cs">
+      <DependentUpon>ActiveTicketsMap.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System_Views\ActiveTicketsMap.aspx.designer.cs">
+      <DependentUpon>ActiveTicketsMap.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="System_Views\AddedVictusTickets.aspx.cs">
+      <DependentUpon>AddedVictusTickets.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System_Views\AddedVictusTickets.aspx.designer.cs">
+      <DependentUpon>AddedVictusTickets.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="System_Views\AddedTickets.aspx.cs">
+      <DependentUpon>AddedTickets.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System_Views\AddedTickets.aspx.designer.cs">
+      <DependentUpon>AddedTickets.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="System_Views\CompletedPMs.aspx.cs">
+      <DependentUpon>CompletedPMs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System_Views\CompletedPMs.aspx.designer.cs">
+      <DependentUpon>CompletedPMs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="System_Views\CheckNodeNames.aspx.cs">
+      <DependentUpon>CheckNodeNames.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System_Views\CheckNodeNames.aspx.designer.cs">
+      <DependentUpon>CheckNodeNames.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="System_Views\ActiveSuppls.aspx.cs">
+      <DependentUpon>ActiveSuppls.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System_Views\ActiveSuppls.aspx.designer.cs">
+      <DependentUpon>ActiveSuppls.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="System_Views\CompletedSuppls.aspx.cs">
+      <DependentUpon>CompletedSuppls.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System_Views\CompletedSuppls.aspx.designer.cs">
+      <DependentUpon>CompletedSuppls.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="System_Views\ActiveBuildings.aspx.cs">
+      <DependentUpon>ActiveBuildings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System_Views\ActiveBuildings.aspx.designer.cs">
+      <DependentUpon>ActiveBuildings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="System_Views\CompletedBuildings.aspx.cs">
+      <DependentUpon>CompletedBuildings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System_Views\CompletedBuildings.aspx.designer.cs">
+      <DependentUpon>CompletedBuildings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="System_Views\ActiveBuildCMs.aspx.cs">
+      <DependentUpon>ActiveBuildCMs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System_Views\ActiveBuildCMs.aspx.designer.cs">
+      <DependentUpon>ActiveBuildCMs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="System_Views\CompletedBuildCMs.aspx.cs">
+      <DependentUpon>CompletedBuildCMs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System_Views\CompletedBuildCMs.aspx.designer.cs">
+      <DependentUpon>CompletedBuildCMs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="System_Views\ActivePMsMap.aspx.cs">
+      <DependentUpon>ActivePMsMap.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System_Views\ActivePMsMap.aspx.designer.cs">
+      <DependentUpon>ActivePMsMap.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="System_Views\ActiveCosAccess.aspx.cs">
+      <DependentUpon>ActiveCosAccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System_Views\ActiveCosAccess.aspx.designer.cs">
+      <DependentUpon>ActiveCosAccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="System_Views\CompletedCosAccess.aspx.cs">
+      <DependentUpon>CompletedCosAccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System_Views\CompletedCosAccess.aspx.designer.cs">
+      <DependentUpon>CompletedCosAccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="System_Views\ActiveCosTelemg.aspx.cs">
+      <DependentUpon>ActiveCosTelemg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System_Views\ActiveCosTelemg.aspx.designer.cs">
+      <DependentUpon>ActiveCosTelemg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="System_Views\CompletedCosTelemg.aspx.cs">
+      <DependentUpon>CompletedCosTelemg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System_Views\CompletedCosTelemg.aspx.designer.cs">
+      <DependentUpon>CompletedCosTelemg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="System_Views\CancelledSchedules.aspx.cs">
+      <DependentUpon>CancelledSchedules.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System_Views\CancelledSchedules.aspx.designer.cs">
+      <DependentUpon>CancelledSchedules.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="System_Views\ActiveChargeable.aspx.cs">
+      <DependentUpon>ActiveChargeable.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System_Views\ActiveChargeable.aspx.designer.cs">
+      <DependentUpon>ActiveChargeable.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="System_Views\CompletedChargeable.aspx.cs">
+      <DependentUpon>CompletedChargeable.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System_Views\CompletedChargeable.aspx.designer.cs">
+      <DependentUpon>CompletedChargeable.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="System_Views\ActiveWindTickets.aspx.cs">
+      <DependentUpon>ActiveWindTickets.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System_Views\ActiveWindTickets.aspx.designer.cs">
+      <DependentUpon>ActiveWindTickets.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="System_Views\AddedWindTickets.aspx.cs">
+      <DependentUpon>AddedWindTickets.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System_Views\AddedWindTickets.aspx.designer.cs">
+      <DependentUpon>AddedWindTickets.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="System_Views\ActiveWindTicketsMap.aspx.cs">
+      <DependentUpon>ActiveWindTicketsMap.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System_Views\ActiveWindTicketsMap.aspx.designer.cs">
+      <DependentUpon>ActiveWindTicketsMap.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="System_Views\ActiveWindPMs.aspx.cs">
+      <DependentUpon>ActiveWindPMs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System_Views\ActiveWindPMs.aspx.designer.cs">
+      <DependentUpon>ActiveWindPMs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="System_Views\CompletedWindPMs.aspx.cs">
+      <DependentUpon>CompletedWindPMs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System_Views\CompletedWindPMs.aspx.designer.cs">
+      <DependentUpon>CompletedWindPMs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="System_Views\ActiveWindPMsMap.aspx.cs">
+      <DependentUpon>ActiveWindPMsMap.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System_Views\ActiveWindPMsMap.aspx.designer.cs">
+      <DependentUpon>ActiveWindPMsMap.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="System_Views\ActiveCosTickets.aspx.cs">
+      <DependentUpon>ActiveCosTickets.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System_Views\ActiveCosTickets.aspx.designer.cs">
+      <DependentUpon>ActiveCosTickets.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="System_Views\ActiveMoreTickets.aspx.cs">
+      <DependentUpon>ActiveMoreTickets.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System_Views\ActiveMoreTickets.aspx.designer.cs">
+      <DependentUpon>ActiveMoreTickets.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="System_Views\ActiveMoreTicketsMap.aspx.cs">
+      <DependentUpon>ActiveMoreTicketsMap.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System_Views\ActiveMoreTicketsMap.aspx.designer.cs">
+      <DependentUpon>ActiveMoreTicketsMap.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="System_Views\CombinedPMs.aspx.cs">
+      <DependentUpon>CombinedPMs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System_Views\CombinedPMs.aspx.designer.cs">
+      <DependentUpon>CombinedPMs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="System_Views\ActiveCombinedMap.aspx.cs">
+      <DependentUpon>ActiveCombinedMap.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System_Views\ActiveCombinedMap.aspx.designer.cs">
+      <DependentUpon>ActiveCombinedMap.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="System_Views\ExpertTicketsLog.aspx.cs">
+      <DependentUpon>ExpertTicketsLog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System_Views\ExpertTicketsLog.aspx.designer.cs">
+      <DependentUpon>ExpertTicketsLog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="System_Views\ManagementTicketsReport.aspx.cs">
+      <DependentUpon>ManagementTicketsReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System_Views\ManagementTicketsReport.aspx.designer.cs">
+      <DependentUpon>ManagementTicketsReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="System_Views\VictusSitesMap.aspx.cs">
+      <DependentUpon>VictusSitesMap.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System_Views\VictusSitesMap.aspx.designer.cs">
+      <DependentUpon>VictusSitesMap.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="System_Views\ProcessedTroubleTickets.aspx.cs">
+      <DependentUpon>ProcessedTroubleTickets.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System_Views\ProcessedTroubleTickets.aspx.designer.cs">
+      <DependentUpon>ProcessedTroubleTickets.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="System_Views\SchVictusTicketInfoControl.ascx.cs">
+      <DependentUpon>SchVictusTicketInfoControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="System_Views\SchVictusTicketInfoControl.ascx.designer.cs">
+      <DependentUpon>SchVictusTicketInfoControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="System_Views\SolvedMoreTickets.aspx.cs">
+      <DependentUpon>SolvedMoreTickets.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System_Views\SolvedMoreTickets.aspx.designer.cs">
+      <DependentUpon>SolvedMoreTickets.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="System_Views\ExpertTickets.aspx.cs">
+      <DependentUpon>ExpertTickets.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System_Views\ExpertTickets.aspx.designer.cs">
+      <DependentUpon>ExpertTickets.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="System_Views\CosTicketsMap.aspx.cs">
+      <DependentUpon>CosTicketsMap.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System_Views\CosTicketsMap.aspx.designer.cs">
+      <DependentUpon>CosTicketsMap.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="System_Views\SolvedCosTickets.aspx.cs">
+      <DependentUpon>SolvedCosTickets.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System_Views\SolvedCosTickets.aspx.designer.cs">
+      <DependentUpon>SolvedCosTickets.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="System_Views\Fleet_Report.aspx.cs">
+      <DependentUpon>Fleet_Report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System_Views\Fleet_Report.aspx.designer.cs">
+      <DependentUpon>Fleet_Report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="System_Views\Fleet_DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Fleet_DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="System_Views\Fleet_XtraReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="System_Views\Fleet_XtraReport.Designer.cs">
+      <DependentUpon>Fleet_XtraReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="System_Views\SolvedVictusTickets.aspx.cs">
+      <DependentUpon>SolvedVictusTickets.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System_Views\SolvedVictusTickets.aspx.designer.cs">
+      <DependentUpon>SolvedVictusTickets.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="System_Views\UploadVictusTickets.aspx.cs">
+      <DependentUpon>UploadVictusTickets.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System_Views\UploadVictusTickets.aspx.designer.cs">
+      <DependentUpon>UploadVictusTickets.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="System_Views\VictusSites.aspx.cs">
+      <DependentUpon>VictusSites.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System_Views\VictusSites.aspx.designer.cs">
+      <DependentUpon>VictusSites.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="System_Views\WindSites.aspx.cs">
+      <DependentUpon>WindSites.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System_Views\WindSites.aspx.designer.cs">
+      <DependentUpon>WindSites.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="System_Views\WindSitesMap.aspx.cs">
+      <DependentUpon>WindSitesMap.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System_Views\WindSitesMap.aspx.designer.cs">
+      <DependentUpon>WindSitesMap.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="System_Views\UploadWindTickets.aspx.cs">
+      <DependentUpon>UploadWindTickets.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System_Views\UploadWindTickets.aspx.designer.cs">
+      <DependentUpon>UploadWindTickets.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="System_Views\SolvedWindTickets.aspx.cs">
+      <DependentUpon>SolvedWindTickets.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System_Views\SolvedWindTickets.aspx.designer.cs">
+      <DependentUpon>SolvedWindTickets.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="System_Views\RouterSchedules.aspx.cs">
+      <DependentUpon>RouterSchedules.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System_Views\RouterSchedules.aspx.designer.cs">
+      <DependentUpon>RouterSchedules.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="System_Views\DispatcherSchedules.aspx.cs">
+      <DependentUpon>DispatcherSchedules.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System_Views\DispatcherSchedules.aspx.designer.cs">
+      <DependentUpon>DispatcherSchedules.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="System_Views\ReInitiateSchedule.aspx.cs">
+      <DependentUpon>ReInitiateSchedule.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System_Views\ReInitiateSchedule.aspx.designer.cs">
+      <DependentUpon>ReInitiateSchedule.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="System_Views\SchedulesMap.aspx.cs">
+      <DependentUpon>SchedulesMap.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System_Views\SchedulesMap.aspx.designer.cs">
+      <DependentUpon>SchedulesMap.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="System_Views\CosTelemgMap.aspx.cs">
+      <DependentUpon>CosTelemgMap.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System_Views\CosTelemgMap.aspx.designer.cs">
+      <DependentUpon>CosTelemgMap.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="System_Views\CosAccessMap.aspx.cs">
+      <DependentUpon>CosAccessMap.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System_Views\CosAccessMap.aspx.designer.cs">
+      <DependentUpon>CosAccessMap.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="System_Views\CosSitesMap.aspx.cs">
+      <DependentUpon>CosSitesMap.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System_Views\CosSitesMap.aspx.designer.cs">
+      <DependentUpon>CosSitesMap.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="System_Views\CosSites.aspx.cs">
+      <DependentUpon>CosSites.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System_Views\CosSites.aspx.designer.cs">
+      <DependentUpon>CosSites.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="System_Views\NodesMap.aspx.cs">
+      <DependentUpon>NodesMap.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System_Views\NodesMap.aspx.designer.cs">
+      <DependentUpon>NodesMap.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="System_Views\TicketsToBeScheduled.aspx.cs">
+      <DependentUpon>TicketsToBeScheduled.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System_Views\TicketsToBeScheduled.aspx.designer.cs">
+      <DependentUpon>TicketsToBeScheduled.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="System_Views\Nodes.aspx.cs">
+      <DependentUpon>Nodes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System_Views\Nodes.aspx.designer.cs">
+      <DependentUpon>Nodes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="System_Views\SchTicketInfo_DataSet.cs">
+      <DependentUpon>SchTicketInfo_DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="System_Views\VisitsPendingLastMonth.aspx.cs">
+      <DependentUpon>VisitsPendingLastMonth.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System_Views\VisitsPendingLastMonth.aspx.designer.cs">
+      <DependentUpon>VisitsPendingLastMonth.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="System_Views\VisitsNotPerformedLastMonth.aspx.cs">
+      <DependentUpon>VisitsNotPerformedLastMonth.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System_Views\VisitsNotPerformedLastMonth.aspx.designer.cs">
+      <DependentUpon>VisitsNotPerformedLastMonth.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="System_Views\VisitsLastMonth.aspx.cs">
+      <DependentUpon>VisitsLastMonth.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System_Views\VisitsLastMonth.aspx.designer.cs">
+      <DependentUpon>VisitsLastMonth.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="System_Views\SchTicketInfo_Report.aspx.cs">
+      <DependentUpon>SchTicketInfo_Report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System_Views\SchTicketInfo_Report.aspx.designer.cs">
+      <DependentUpon>SchTicketInfo_Report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InitiateSchedule.aspx.cs">
+      <DependentUpon>InitiateSchedule.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InitiateSchedule.aspx.designer.cs">
+      <DependentUpon>InitiateSchedule.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SchEdit_XtraReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SchEdit_XtraReport.Designer.cs">
+      <DependentUpon>SchEdit_XtraReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="System_Configuration\ConfigurationList.aspx.cs">
+      <DependentUpon>ConfigurationList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System_Configuration\ConfigurationList.aspx.designer.cs">
+      <DependentUpon>ConfigurationList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="System_Configuration\SRICategory.aspx.cs">
+      <DependentUpon>SRICategory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System_Configuration\SRICategory.aspx.designer.cs">
+      <DependentUpon>SRICategory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="System_Configuration\Processes.aspx.cs">
+      <DependentUpon>Processes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System_Configuration\Processes.aspx.designer.cs">
+      <DependentUpon>Processes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="System_Configuration\Vehicle.aspx.cs">
+      <DependentUpon>Vehicle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System_Configuration\Vehicle.aspx.designer.cs">
+      <DependentUpon>Vehicle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="System_Views\ActiveTickets.aspx.cs">
+      <DependentUpon>ActiveTickets.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System_Views\ActiveTickets.aspx.designer.cs">
+      <DependentUpon>ActiveTickets.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DeadSession.aspx.cs">
+      <DependentUpon>DeadSession.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DeadSession.aspx.designer.cs">
+      <DependentUpon>DeadSession.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentDisplay.aspx.cs">
+      <DependentUpon>DocumentDisplay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DocumentDisplay.aspx.designer.cs">
+      <DependentUpon>DocumentDisplay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="System_Views\ActiveSchedules.aspx.cs">
+      <DependentUpon>ActiveSchedules.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System_Views\ActiveSchedules.aspx.designer.cs">
+      <DependentUpon>ActiveSchedules.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="System_Views\CompletedSchedules.aspx.cs">
+      <DependentUpon>CompletedSchedules.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System_Views\CompletedSchedules.aspx.designer.cs">
+      <DependentUpon>CompletedSchedules.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SchEdit_Report.aspx.cs">
+      <DependentUpon>SchEdit_Report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SchEdit_Report.aspx.designer.cs">
+      <DependentUpon>SchEdit_Report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="System_Views\MyActiveSchedules.aspx.cs">
+      <DependentUpon>MyActiveSchedules.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System_Views\MyActiveSchedules.aspx.designer.cs">
+      <DependentUpon>MyActiveSchedules.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SchEdit_DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SchEdit_DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="System_Views\SchTicketInfoControl.ascx.cs">
+      <DependentUpon>SchTicketInfoControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="System_Views\SchTicketInfoControl.ascx.designer.cs">
+      <DependentUpon>SchTicketInfoControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="System_Views\SchEditControl.ascx.cs">
+      <DependentUpon>SchEditControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="System_Views\SchEditControl.ascx.designer.cs">
+      <DependentUpon>SchEditControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="System_Views\SchTicketInfo_DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SchTicketInfo_DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="System_Views\SchTicketInfo_XtraReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="System_Views\SchTicketInfo_XtraReport.Designer.cs">
+      <DependentUpon>SchTicketInfo_XtraReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="System_Views\SolvedTickets.aspx.cs">
+      <DependentUpon>SolvedTickets.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System_Views\SolvedTickets.aspx.designer.cs">
+      <DependentUpon>SolvedTickets.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="System_Views\UploadTickets.aspx.cs">
+      <DependentUpon>UploadTickets.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System_Views\UploadTickets.aspx.designer.cs">
+      <DependentUpon>UploadTickets.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="System_Views\VisitsPerMonth.aspx.cs">
+      <DependentUpon>VisitsPerMonth.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System_Views\VisitsPerMonth.aspx.designer.cs">
+      <DependentUpon>VisitsPerMonth.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="System_Views\VisitsPerSite.aspx.cs">
+      <DependentUpon>VisitsPerSite.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System_Views\VisitsPerSite.aspx.designer.cs">
+      <DependentUpon>VisitsPerSite.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Management\LoggedUsers.aspx.cs">
+      <DependentUpon>LoggedUsers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Management\LoggedUsers.aspx.designer.cs">
+      <DependentUpon>LoggedUsers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage.aspx.cs">
+      <DependentUpon>MainPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MainPage.aspx.designer.cs">
+      <DependentUpon>MainPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="System_Views\MyMessages.aspx.cs">
+      <DependentUpon>MyMessages.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System_Views\MyMessages.aspx.designer.cs">
+      <DependentUpon>MyMessages.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="System_Configuration\RoleActions.aspx.cs">
+      <DependentUpon>RoleActions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System_Configuration\RoleActions.aspx.designer.cs">
+      <DependentUpon>RoleActions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Management\Roles.aspx.cs">
+      <DependentUpon>Roles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Management\Roles.aspx.designer.cs">
+      <DependentUpon>Roles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="System_Configuration\RoutingPath.aspx.cs">
+      <DependentUpon>RoutingPath.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System_Configuration\RoutingPath.aspx.designer.cs">
+      <DependentUpon>RoutingPath.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Management\StandByList.aspx.cs">
+      <DependentUpon>StandByList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Management\StandByList.aspx.designer.cs">
+      <DependentUpon>StandByList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Management\Teams.aspx.cs">
+      <DependentUpon>Teams.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Management\Teams.aspx.designer.cs">
+      <DependentUpon>Teams.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Management\Users.aspx.cs">
+      <DependentUpon>Users.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Management\Users.aspx.designer.cs">
+      <DependentUpon>Users.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Images\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Reporting\DailyProgram_XRep.resx">
+      <DependentUpon>DailyProgram_XRep.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporting\DailyVisits_XRep.resx">
+      <DependentUpon>DailyVisits_XRep.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporting\Expenses_Xrep.resx">
+      <DependentUpon>Expenses_Xrep.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporting\ManagementReportSummary_Xrep.resx">
+      <DependentUpon>ManagementReportSummary_Xrep.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporting\Overtimes_Xrep.resx">
+      <DependentUpon>Overtimes_Xrep.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporting\SchedulesKPIs_XRep.resx">
+      <DependentUpon>SchedulesKPIs_XRep.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporting\Schedules_XRep.resx">
+      <DependentUpon>Schedules_XRep.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporting\VFTroubleTickets_XRep.resx">
+      <DependentUpon>VFTroubleTickets_XRep.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SchEdit_XtraReport.resx">
+      <DependentUpon>SchEdit_XtraReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="System_Views\Fleet_XtraReport.resx">
+      <DependentUpon>Fleet_XtraReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="System_Views\SchTicketInfo_XtraReport.resx">
+      <DependentUpon>SchTicketInfo_XtraReport.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\PublishProfiles\Profile1.pubxml" />
+    <None Include="Reporting\DailyProgram_Dat.xsc">
+      <DependentUpon>DailyProgram_Dat.xsd</DependentUpon>
+    </None>
+    <None Include="Reporting\DailyProgram_Dat.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DailyProgram_Dat.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reporting\DailyProgram_Dat.xss">
+      <DependentUpon>DailyProgram_Dat.xsd</DependentUpon>
+    </None>
+    <None Include="Reporting\DailyVisits_Dat.xsc">
+      <DependentUpon>DailyVisits_Dat.xsd</DependentUpon>
+    </None>
+    <None Include="Reporting\DailyVisits_Dat.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DailyVisits_Dat.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reporting\DailyVisits_Dat.xss">
+      <DependentUpon>DailyVisits_Dat.xsd</DependentUpon>
+    </None>
+    <Content Include="Reporting\Expenses_Dat.xsc">
+      <DependentUpon>Expenses_Dat.xsd</DependentUpon>
+    </Content>
+    <None Include="Reporting\Expenses_Dat.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Expenses_Dat.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Reporting\Expenses_Dat.xss">
+      <DependentUpon>Expenses_Dat.xsd</DependentUpon>
+    </Content>
+    <None Include="Reporting\ManagementReportSummary_Dat.xsc">
+      <DependentUpon>ManagementReportSummary_Dat.xsd</DependentUpon>
+    </None>
+    <None Include="Reporting\ManagementReportSummary_Dat.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ManagementReportSummary_Dat.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reporting\ManagementReportSummary_Dat.xss">
+      <DependentUpon>ManagementReportSummary_Dat.xsd</DependentUpon>
+    </None>
+    <None Include="Reporting\Overtimes_Dat.xsc">
+      <DependentUpon>Overtimes_Dat.xsd</DependentUpon>
+    </None>
+    <None Include="Reporting\Overtimes_Dat.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Overtimes_Dat.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reporting\Overtimes_Dat.xss">
+      <DependentUpon>Overtimes_Dat.xsd</DependentUpon>
+    </None>
+    <None Include="Reporting\SchedulesKPIs_Dat.xsc">
+      <DependentUpon>SchedulesKPIs_Dat.xsd</DependentUpon>
+    </None>
+    <None Include="Reporting\SchedulesKPIs_Dat.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SchedulesKPIs_Dat.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reporting\SchedulesKPIs_Dat.xss">
+      <DependentUpon>SchedulesKPIs_Dat.xsd</DependentUpon>
+    </None>
+    <None Include="Reporting\Schedules_Dat.xsc">
+      <DependentUpon>Schedules_Dat.xsd</DependentUpon>
+    </None>
+    <None Include="Reporting\Schedules_Dat.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Schedules_Dat.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reporting\Schedules_Dat.xss">
+      <DependentUpon>Schedules_Dat.xsd</DependentUpon>
+    </None>
+    <None Include="Reporting\VFTroubleTickets_Dat.xsc">
+      <DependentUpon>VFTroubleTickets_Dat.xsd</DependentUpon>
+    </None>
+    <None Include="Reporting\VFTroubleTickets_Dat.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VFTroubleTickets_Dat.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reporting\VFTroubleTickets_Dat.xss">
+      <DependentUpon>VFTroubleTickets_Dat.xsd</DependentUpon>
+    </None>
+    <None Include="SchEdit_DataSet.xsc">
+      <DependentUpon>SchEdit_DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SchEdit_DataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SchEdit_DataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="SchEdit_DataSet.xss">
+      <DependentUpon>SchEdit_DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="System_Views\Fleet_DataSet.xsc">
+      <DependentUpon>Fleet_DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="System_Views\Fleet_DataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Fleet_DataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="System_Views\Fleet_DataSet.xss">
+      <DependentUpon>Fleet_DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="System_Views\SchTicketInfo_DataSet.xsc">
+      <DependentUpon>SchTicketInfo_DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="System_Views\SchTicketInfo_DataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SchTicketInfo_DataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="System_Views\SchTicketInfo_DataSet.xss">
+      <DependentUpon>SchTicketInfo_DataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\</OutputPath>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>21316</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:21718/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
